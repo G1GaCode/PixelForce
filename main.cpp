@@ -19,6 +19,8 @@ int main()
     window_object.camera_obj = &cam_obj;
     window_object.set_callback();
 
+    //Hello World
+
     float vertices_cube[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
         0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
