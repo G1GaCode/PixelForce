@@ -6,7 +6,7 @@
 
 #include "../headers/stb_image.h"
 
-#include "../headers/shader.h"
+#include "../headers/shader.hpp"
 #include "../headers/cube.hpp"
 
 void Cube::SettingGL()

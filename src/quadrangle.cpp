@@ -3,7 +3,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "../headers/stb_image.h"
 
-#include "../headers/shader.h"
+#include "../headers/shader.hpp"
 #include "../headers/quadrangle.hpp"
 
 void Quadrangle::SettingGL()

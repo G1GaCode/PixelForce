@@ -3,7 +3,7 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#include "shader.h"
+#include "shader.hpp"
 #include "VAO.hpp"
 #include "VBO.hpp"
 #include "EBO.hpp"
