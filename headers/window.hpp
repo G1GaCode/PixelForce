@@ -8,7 +8,9 @@
 
 #ifndef PF_WINDOW_H
 #define PF_WINDOW_H
-
+/**
+ * @todo add comments
+ */
 struct Window
 {
     static inline bool keys[1024], first_mouse = true;
