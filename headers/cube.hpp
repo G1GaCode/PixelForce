@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 #include <vector>
 
-#include "shader.h"
+#include "shader.hpp"
 #include "VAO.hpp"
 #include "VBO.hpp"
 

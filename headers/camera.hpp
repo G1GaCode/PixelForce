@@ -8,7 +8,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "shader.h"
+#include "shader.hpp"
 
 #ifndef PF_CAMERA_H
 #define PF_CAMERA_H

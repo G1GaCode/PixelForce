@@ -6,6 +6,7 @@
 
 #include "../headers/window.hpp"
 #include "../headers/camera.hpp"
+#include "../headers/stb_image.h"
 
 Window::Window(Camera *camera_obj, int width, int height)
 {
@@ -25,7 +26,23 @@ Window::Window(Camera *camera_obj, int width, int height)
         glfwTerminate();
     }
 
+    /** 
+     * set window icon
+     * @todo make it smarter (I'm too lazy for that)
+     */
+    GLFWimage icons[4];
+    icons[0].pixels = stbi_load("icons/icon16.png", &icons[0].width, &icons[0].height, 0, 4);
+    icons[1].pixels = stbi_load("icons/icon32.png", &icons[1].width, &icons[1].height, 0, 4);
+    icons[2].pixels = stbi_load("icons/icon48.png", &icons[2].width, &icons[2].height, 0, 4);
+    icons[3].pixels = stbi_load("icons/icon64.png", &icons[3].width, &icons[3].height, 0, 4);
+    glfwSetWindowIcon(window,4, icons);
+    stbi_image_free(icons[0].pixels);
+    stbi_image_free(icons[1].pixels);
+    stbi_image_free(icons[2].pixels);
+    stbi_image_free(icons[3].pixels);
+
     glfwMakeContextCurrent(window);
+
     // GLEW base settings
     glewExperimental = GL_TRUE;
     if (glewInit() != GLEW_OK)

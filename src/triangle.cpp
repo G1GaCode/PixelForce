@@ -3,7 +3,7 @@
 #include "../headers/stb_image.h"
 
 #include "../headers/triangle.hpp"
-#include "../headers/shader.h"
+#include "../headers/shader.hpp"
 
 void Triangle::SettingGL()
 {
